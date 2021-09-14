@@ -101,7 +101,7 @@ nav{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-
+	
 }
 
 .about-left-col{
@@ -120,7 +120,6 @@ nav{
 }
 .about-right-col{
 	flex-basis: 50%;
-	
 }
 #p-title{
 	font-size:20px;
