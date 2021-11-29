@@ -1,216 +1,419 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Portfolio Website</title>
-	<link rel="stylesheet" type="text/css" href="css/PortfolioCssFile.css">
-
-	<script type="text/javascript" src="js/PortfolioJsFile.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atish Kumar Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script type="text/javascript" src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/typed.min.js"></script>
-	
-	
+    <!-- <script src="https://kit.fontawesome.com/98d97ba858.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-<header>
-	<nav>
-		<div class="logo">PORTFO<span>LIO</span></div>
-		<div class="menu">
-			<a href="#">Home</a>
-			<a href="#about">About</a>
-			<a href="#skills">Skills</a>
-			<a href="#projects">Project</a>
-			<a href="#contact">Contact</a>
-
-		</div>
-	</nav>
-    
-    <div class="text">
-    	<p>Hello, I am</p>
-    	<h1>Atish Kumar</h1>
-    	<p>And I'am a <span id="ani"style="color:green;"></span></p>
-    	<button class="c-btn" >Explore</button>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-
-</header>
-<section id="sidenav">
-	<img src="portfolioimg/menubar.png" id="menubar">
-	    <a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Skills</a>
-			<a href="#">Project</a>
-			<a href="#">Contact</a>
-
-</section>
-
-<section id="about">
-        <div class="section-info">
-        	<h1>About</h1>
-        	<p>Who i am?</p>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="https://earth.google.com/web/search/Vinoba+Bhave+University,+Vinoba+Bhave+University+Road,+Sindoor,+Hazaribagh,+Jharkhand/@24.02455437,85.37709368,590.11299916a,563.98214765d,35y,-109.64668952h,44.9975132t,0r/data=CigiJgokCdCZk6EuAThAESl1NjKu-zdAGf3B9c-xWFVAIQ5mfWHTVVVA">Hello <span>World! <i class="fas fa-globe-americas"></i></span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#Experiences" class="menu-btn">Experiences</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#Achievements" class="menu-btn">Achievements</a></li>
+                <li><a href="#Projects" class="menu-btn">Projects</a></li>
+                <li><a href="#Hobbies" class="menu-btn">Hobbies</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
+    </nav>
 
-        <div class="about-row">
-          <div class="about-left-col">
-          	  <img src="portfolioimg/atish21.jpeg">
-          </div>
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">My name is</div>
+                <div class="text-2">Atish Kumar</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <br>
+                <a href="#about">About me</a>
+            </div>
+        </div>
+    </section>
 
-          <div class="about-right-col">
-          	<p id="p-title">Hello, I'am Atish & I'am a <span id="ani2"style="color:red;"></span></p>
-          	<p>
-          	Hello,I am Atish Kumar, an undergraduate student at National Institute of Technology Manipur.I am pursuing Bachelor of Technology in Electronics and Communication Engineering.My academics include playing with circuits and processors while my rest of the time is fully dedicated to coding and developing.I am a passionate programmer and a tech enthusiast. Always looking for a key exposure in the fields of Software Development.
-          	</p>
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me <i class="fas fa-user"></i></h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/atish21.jpeg" alt="my photo">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Atish and I'm a <span class="typing-2"></span></div>
+                    <p>I am an undergraduate student at National Institute of Technology Manipur.I am pursuing Bachelor of Technology in Electronics and Communication Engineering.My academics include playing with circuits and processors while my rest of the time is fully dedicated to coding and developing.I am a passionate programmer and a tech enthusiast. Always looking for a key exposure in the fields of Software Development.</p>
+                    <a href="https://drive.google.com/file/d/1LVNrh7lig7HxFJv6V2IAGahTXo4pNI30/view?usp=sharing">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section start -->
+    <section class="Education" id="Education">
+        <div class="max-width">
+            <h2 class="title grad-edu">My Education <i class=" fas fa-graduation-cap"></i></h2>
+             <p class="college">
+               National Institute of Technology, Manipur
+                <br>
+                 ➤ Stream: Electronics and Communications
+                <br>
+                  ➤ CGPA: 7.83/10(aggregate till 6th sem)
+                <br>
+                  ➤ Passing year: 2022
+            </p>
+            </div>
+    </section>
+    <!-- Experiences section start -->
+    <section class="Experiences" id="Experiences">
+        <div class="max-width">
+            <h2 class="title experience-title">My Experiences <i class="fas fa-lightbulb"></i></h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+
+                        <i class="fas fa-virus"></i>
+
+                        <div class="text"><a href="https://github.com/atishkumar123/Covid_19_tracker">Covid-19-Tracker App</a></div>
+                        <p> Developed an android app that will help to track covid-19 cases globally.The app will show the data of all the countries and will also show the data of all the states and all districts of India.The software used to build this app is Android Studio and Java as it's backend language.The API calls have been made via Volley library.</p>
+                        <!-- as they are wander on roads for scraps of food to feed themselves -->
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-calculator"></i>
+
+                        <div class="text"><a href="https://github.com/atishkumar123/NITM_SGPA_Tracker">Nitm Sgpa Calculator</a></div>
+                        <p>An Android App that could help the students of NIT Manipur in predicting their expected current semester performance.The app idea was to ease the process which the students use to follow to predict their scores after the exams The software used to accomplish the task is Android Studio and it includes the basic concept of Java and XML</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text"><a href="#f">Wooden Quadcopter</a></div>
+                        <p>A quadcopter having the feature of auto stabilizing itself in mid-air while flight.The main electronic components include Arduino UNO R3 microprocessor and MPU Gyro-cum accelerometer.The model was made with efficient low-cost material to bring down the effective price.Our team stood 2nd Runner up in the NIT Manipur tech-fest</p>
+                    </div>
+                </div>
+                
+               
+               
+                
+                
+               </div>
+            </div>
+    </section>
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title skill-title">My Skills <i class="fas fa-cogs"></i></h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & Area of Interests.</div>
+                    <p class="skill-text">Hello World! I am a tech enthusiast passionate for coding, Investing every day to gain more knowledge. I am passionate about building software that improves the lives of those around me. I have good problem-solving skills, good command over Data Structures and Algorithms and ability to perform well in a team, right now pursuing Bachelor of Technology in Electronics and Communication Engineering from Nit Manipur</p>
+                    <p class="skill-text">
+                        If you want to dive deep and want to look at my work then you can visit my github.
+                    </p>
+                    <a href="https://github.com/atishkumar123">My Github</a>
+                </div>
+                <div class="column right skill-text">
+
+                    <div class = skill-set>
+                        <p>
+                            <i class="skill-set-text fas fa-code"></i> Data structures and Algorithms
+                        </p>
+                        <p>
+                            <i class="skill-set-text fas fa-code"></i> Android development
+                        </p>
+                        <p>
+                            <i class="skill-set-text fas fa-code"></i> Frontend Development
+                        </p>
+                        <p>
+                            <i class="skill-set-text fas fa-code"></i> Java
+                        </p>
+                        <p>
+                            <i class="skill-set-text fas fa-code"></i> RDBMS(MYSQL)
+                        </p>
+                        <p>
+                            <i class="skill-set-text fas fa-code"></i> oops
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Achievements section start -->
+ <section class="Achievements" id="Achievements">
+     <div class="max-width">
+         <h2 class="title">My Achievements <i class="fas fa-tasks"></i></h2>
+         <div class="serv-content">
+             <div class="card">
+                 <div class="box">
+                     <i class="fab fa-hackerrank"></i>
+                     <div class="text">Hackerrank (Programming)</div>
+                     <p>5 star in Problem-solving</p>
+                     <p>5 star in sql</p>
+                     
+                 </div>
+             </div>
+             <div class="card">
+                 <div class="box">
+                     <i class="fas fa-code"></i>
+                     <div class="text">Geeks For Geeks (Programming)</div>
+                     <p>4th rank in Nit manipur</p>
+                         <p>          </p>
+                         
+                 </div>
+             </div>
+             
+             <div class="card">
+                 <div class="box">
+                     <i class="fab fas fa-user-ninja"></i>
+                     <div class="text">Coding Ninjas</div>
+                     <p>Scored 96% in Competitive Programming course of coding Ninjas and was a Top Performer in my batch.</p>
+                 </div>
+             </div>
+
              
              
-             <a href="https://drive.google.com/file/d/1LVNrh7lig7HxFJv6V2IAGahTXo4pNI30/view?usp=sharing" download>
-  <button class="c-btn">Download cv</button>
-</a>
-          	
-          </div>
-
-        </div>	
 
 
+            </div>
+         </div>
+ </section>
+
+    <!-- Projects section start -->
+    <section class="Projects" id="Projects">
+        <div class="max-width">
+            <h2 class="title">My Projects <i class="fas fa-wrench"></i></h2>
+            <div class="carousel owl-carousel">
+                <div class="project-card">
+                    <img src="images/covid1.jpg" alt="">
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/covid2.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/covid3.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/covid4.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/covid5.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/covid6.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/covid7.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/covid8.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/covid9.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm1.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm2.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm3.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm4.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm5.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm6.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm7.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm8.jpg" alt="">
+                </div>
+                <div class="project-card">
+                    <img src="images/nitm9.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-    	<div class="section-info">
-        	<h1 style="color:white;">Skill's</h1>
-        	<p>Who i am?</p>
+    <!-- Hobbies section start -->
+    <section class="Hobbies" id="Hobbies">
+        <div class="max-width">
+            <h2 class="title">My Hobbies <i class="fas fa-chess-board"></i></h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-guitar"></i>
+                        <div class="text">Singing</div>
+                        <p>I love to sing</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-book"></i>
+                        <div class="text">Reading Books</div>
+                        <p>I love reading different types of books.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Cooking</div>
+                        <p>I love to cook</p>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <!-- contact section start -->
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+
+            <h2 class="title " style="color:white">Links <i class="fas fa-link"></i></h2>
+
+            <div class="connect container-float">
+                <a style="color:white" href="https://www.linkedin.com/in/atish-kumar-a7b667196/"><i class="fab fa-linkedin"></i>  Linkedin   || </a>
+                <a style="color:white" href="https://www.hackerrank.com/atishkumar12458"><i class="fab fa-hackerrank"></i>  Hackerrank   || </a>
+                <a style="color:white" href="https://auth.geeksforgeeks.org/user/atish30"><i class="fab fa-creative-commons"></i>  GeeksForGeeks   || </a>
+                <a style="color:white" href="https://leetcode.com/toxic_ece/"><i class="fas fa-link"></i>  Leetcode   || </a>
+                <a style="color:white" href="mailto: atishkumar12458@gmail.com"><i class="fas fa-envelope"></i>  Mail </a>
+                
+            </div>
+
+
+
+
+
+
         </div>
 
-        <div class="skills-row">
-        	<div class="skills-left-col">
-        	 <p>
-        		 Hello,I am Atish Kumar, an undergraduate student at National Institute of Technology Manipur.I am pursuing Bachelor of Technology in Electronics and Communication Engineering.My academics include playing with circuits and processors while my rest of the time is fully dedicated to coding and developing.I am a passionate programmer and a tech enthusiast.Always looking for a key exposure in the fields of Software Development and Web Development.
-        	 </p>
-        		<button class="c-btn">Read more</button>
-        		
-        	</div>
-        	<div class="skills-right-col">
-        		
-        		<div class="progress-div">
-        			<p>
-        				<span>JAVA</span><br>
-        				<progress value="80" max="100"></progress>
-        				<span>90%</span>
-        			</p>
-        			<p>
-        				<span>DS and Algo</span><br>
-        				<progress value="80" max="100"></progress>
-        				<span>80%</span>
-        			</p>
-        			<p>
-        				<span>HTML</span><br>
-        				<progress value="80" max="100"></progress>
-        				<span>80%</span>
-        			</p>
-        			<p>
-        				<span>CSS</span><br>
-        				<progress value="80" max="100"></progress>
-        				<span>70%</span>
-        			</p>
-        			<p>
-        				<span>BOOTSTRAP</span><br>
-        				<progress value="80" max="100"></progress>
-        				<span>80%</span>
-        			</p>
-        			<p>
-        				<span>MYSQL</span><br>
-        				<progress value="80" max="100"></progress>
-        				<span>80%</span>
-        			</p>
-        			
-        			
-        		</div>
-        	</div>
-        	
-        </div>
-
     </section>
-
-    <section id="projects">
-    	<div class="section-info">
-        	<h1 >Projects</h1>
-       </div>
-
-       <div class="projects-row">
-       	 <div class="project-box"data-tilt>
-          <img src="portfolioimg/covid19.jpg">
-          <h2>Covid19-Tracker-App</h2>
-          <p>
-          	An android app that will help to track covid-19 cases globally.The app will show the data of all the countries and will also show the data of all the states and all districts of India.The software used to build this app is Android Studio and Java as it's backend language.The API calls have been made via Volley library. 
-
-          </p>
-       	 </div>
-       	 
-       	 <div class="project-box"data-tilt>
-          <img src="portfolioimg/portfolio.jpg">
-          <h2>E-Portfolio</h2>
-          <p>
-          	This is my E-Portfolio website. This is my first project in the field of Web Development.This website is created using HTML,CSS,Bootstrap,JS and Type.js Library for Typing Animation.The photos are imported from Google and Unsplash. The icons used are from FontAwesome.
-          </p>
-       	 </div>
-       	 <div class="project-box"data-tilt>
-          <img src="portfolioimg/drone.jpg">
-          <h2>Wooden Quadcopter</h2>
-          <p>
-          	 A quadcopter having the feature of auto stabilizing itself in mid-air while flight.The main electronic components include Arduino UNO R3 microprocessor and MPU Gyro-cum accelerometer.The model was made with efficient low-cost material to bring down the effective price.Our team stood 2nd Runner up in the NIT Manipur tech-fest.
-           </p>
-       	 </div>
-       </div>
-    </section>
-
-    <section id="contact">
-    	<div class="section-info ">
-        	<h1 style="color:white;" >Get In Touch</h1>
-        	<p style="color:black;">I am Available</p>
-       </div>
-
-       <div class="contact-row">
-       	<div class="contact-left-col">
-       		<img src="portfolioimg/b3.png">
-       	</div>
-       	<div class="contact-right-col">
-       		<form>
-       			<h2>connect with us</h2>
-       			<input type="text" name="" placeholder="Name">
-       			<input type="email" name="" placeholder="E-mail">
-       			<br>
-       			<textarea cols="40" rows="10" placeholder="Message"></textarea>
-       			<br>
-       			<button class="c-btn">Submit</button>
-       		</form>
-       	</div>
-       </div>
-    </section>
-
+    <!-- footer section start -->
+    <hr>
     <footer>
-    	<h2>Developed<br>by Atish Kumar</h2>
-    	<img src="portfolioimg/icon.png" width="100">
+        <span><span class="far fa-copyright"></span> Copyright 2021 Atish Kumar Portfolio.</span>
     </footer>
-     
 
-    
-   
-    
     <script>
-    	let animate=new Typed('#ani',{
-    		strings:["Fronted End Developer.","Android Developer.","Singer."],
-    		typeSpeed:100,
-    		backSpeed:100,
-    		loop:true,
-    	});
+      $(document).ready(function(){
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        }else{
+            $('.navbar').removeClass("sticky");
+        }
+
+        // scroll-up button show/hide script
+        if(this.scrollY > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
+
+    // slide-up script
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+        // removing smooth scroll on slide-up button click
+        $('html').css("scrollBehavior", "auto");
+    });
+
+    $('.navbar .menu li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
+
+    // toggle menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
+    // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["Student", "Fronted-Developer", "Android Developer", "Competitive-Programmer", "Problem-Solver", "Singer", ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+       strings: ["Student", "Fronted-Developer", "Android Developer", "Competitive-Programmer", "Problem-Solver", "Singer", ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    // owl carousel script
+    $('.carousel').owlCarousel({
+        margin: 20,
+
+        loop: true,
+        nav:true,
+       // autoWidth:true,
+        autoplay:true,
+        autoplayTimeOut: 100,
+        autoplayHoverPause: true,
+         
+        responsive: {
+            0:{
+                items: 1,
+                
+            },
+            600:{
+                items: 2,
+                
+            },
+            1000:{
+                items: 5,
+                
+            }
+        }
+    });
+});
+
+
     </script>
 
-     <script>
-    	let animate2=new Typed('#ani2',{
-    		strings:["Fronted End Developer.","Android Developer.","Singer."],
-    		typeSpeed:100,
-    		backSpeed:100,
-    		loop:true,
-    	});
-    </script>
     <script src="js/tilt.jquery.min.js"></script>
-    
 </body>
 </html>

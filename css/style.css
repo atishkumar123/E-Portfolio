@@ -12,7 +12,7 @@ html{
     scroll-behavior: smooth;
 }
 body {
-  background-image: url("images/3.jpg");
+  background-image: url('../images/3.jpg');
 }
 
 /* custom scroll bar */
@@ -860,3 +860,4 @@ footer span a:hover{
 .connect{
     text-align:center;
 }
+
